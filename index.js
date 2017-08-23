@@ -55,7 +55,7 @@ const handlerReq = (req, p) => (req.then((resp) => {
     // }
     return j;
 }));
-const ReqApi = {
+const sfetch = {
     filterPm(p) {
         // console.log('pm', p.pm, p.type);        
         let g = Object.assign({
@@ -91,4 +91,4 @@ const JSON2Str = (data) => {
     return toString.replace(/$/, "");
 };
 
-export { ReqApi };
+export { sfetch };
