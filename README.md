@@ -23,25 +23,25 @@
 ## Example
 
 ####  GET
-                 sfetch.get({
-                      url: url,
-                      body: body,//Object
-			          timeout: 5000
-                 }).then((response) => {
-		              //response include 'json' field
-                 },(response)=>{
-		              //response include 'text' field
-		         });
+       sfetch.get({
+            url: url,
+            body: body,//Object
+	        timeout: 5000
+        }).then((response) => {
+        //response include 'json' field
+        },(response)=>{
+        //response include 'text' field
+	    });
 #### POST
-                 sfetch.post({
-                      url: url,
-                      body: body,//Object or FormData
-					  timeout: 5000
-                  }).then((response) => {
-                      //response include 'json' field
-                   },(response)=>{
-                      //response include 'text' field
-                   });
+        sfetch.post({
+             url: url,
+             body: body,//Object or FormData	 
+			 timeout: 5000
+         }).then((response) => {
+             //response include 'json' field
+          },(response)=>{
+             //response include 'text' field
+          });
 #### PATH
 ###### the same as POST
 #### DELETE
