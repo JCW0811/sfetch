@@ -1,8 +1,10 @@
 **Sfetch** 
 
-response add json data
+response add field 'json' to save backend data
 
-JSON.stringify post body
+post body use JSON.stringify
+
+get make field build up url end
 
 **Running locally in development mode**
 
