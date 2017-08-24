@@ -1,13 +1,50 @@
-**Sfetch** 
+# Sfetch
 
-response add field 'json' to save backend data
+- package [fetch](http://github.github.io/fetch/ "fetch")
 
-post body use JSON.stringify
+- response add field **'json'** to save backend data otherwise add field **'text'**
 
-get make field build up url end
+- body make **object** to JSON.stringify(object)
 
-add timeout
+- auto identify FormData or JSON
 
-**Running locally in development mode**
+- method support **GET POST PATH DELETE**
 
-    npm install sfetch
+- support timeout (default not set)
+
+- support header (but fetch Request header field Authorization is not allowed)
+
+## Usage
+
+`    npm install sfetch --save`
+
+`	import sfetch from 'sfetch'`
+
+## Example
+
+####  GET
+                 sfetch.get({
+                      url: url,
+                      body: body,//Object
+			          timeout: 5000
+                 }).then((response) => {
+		              //response include 'json' field
+                 },(response)=>{
+		              //response include 'text' field
+		         });
+#### POST
+                 sfetch.post({
+                      url: url,
+                      body: body,//Object or FormData
+					  timeout: 5000
+                  }).then((response) => {
+                      //response include 'json' field
+                   },(response)=>{
+                      //response include 'text' field
+                   });
+#### PATH
+###### the same as POST
+#### DELETE
+###### the same as POST
+
+
