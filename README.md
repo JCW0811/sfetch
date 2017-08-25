@@ -6,7 +6,7 @@
 
 - body make **object** to JSON.stringify(object)
 
-- auto identify FormData or JSON
+- body suppport FormData or JSON (use FormData set daetaType:'formdata')
 
 - method support **GET POST PATH DELETE**
 
@@ -33,10 +33,11 @@
         //response include 'text' field
 	    });
 #### POST
-        sfetch.post({
+         sfetch.post({
              url: url,
-             body: body,//Object or FormData	 
-			 timeout: 5000
+             body: body,//Object or FormData
+             dataType : 'formdata',// body is FormData
+			   timeout: 5000
          }).then((response) => {
              //response include 'json' field
           },(response)=>{
