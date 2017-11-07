@@ -1,6 +1,6 @@
 {
   "name": "sfetch",
-  "version": "0.3.4",
+  "version": "1.0.1",
   "description": "fetch package",
   "main": "index.js",
   "scripts": {
