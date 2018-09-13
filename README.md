@@ -1,4 +1,4 @@
-# Sfetch
+# sfetch
 
 - package [fetch](http://github.github.io/fetch/ "fetch")
 
